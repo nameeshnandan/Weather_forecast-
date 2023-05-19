@@ -1,0 +1,211 @@
+
+/* *{
+    font-family: 'Montserrat', sans-serif;
+
+} */
+body{
+    /* background-image: linear-gradient(rgba(241,123,187,255), rgba(101,97,240,255)); */
+    background-image: url("images/2.webp");
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+.navbar{
+    background-color: rgba(43,36,77,255);
+    height: 50px;
+}
+.navrow{
+    display: flex;
+}
+.navbar-brand{
+    display: flex;
+}
+.navbar-brand p{
+    /* margin-top: 1%; */
+    margin-left: 5%;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+.navbar img{
+    margin-left: 18%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.time{
+    margin-left: 20%;
+    display: flex;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.time p{
+    margin-top: 1%;
+    margin-left: 2%;
+}
+.main{
+    /* height: 500px; */
+    background-color: rgba(255, 255, 255, 0.324);
+    border-radius: 40px;
+
+}
+
+/* search part  */
+.search{
+    height: 50px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbox{
+    height: 30px;
+    border: 0px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.79);
+    padding: 20px;
+}
+.searchbtn{
+    height: 30px;
+    width: 30px;
+    border: 0px;
+    border-radius: 50%;
+    margin-left: 3%;
+    border: 2px solid rgba(0, 0, 0, 0.79);
+
+}
+.currentLocation{
+    height: 30px;
+    border: 0px;
+    border-radius: 50px;
+    margin-left: 5%;
+    border: 2px solid rgba(0, 0, 0, 0.79);
+
+}
+
+/* main part  */
+.upperPart{
+    background-image: url("images/th.jpeg");
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    background-image: linear-gradient(rgba(51,22,103,255),rgba(49,34,122,255), rgba(47,46,140,255));
+    border-radius: 30px 30px 0px 0px;
+}
+.tempdiv{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 100px; */
+    justify-content: center;
+    text-align: center;
+    /* align-items: center; */
+}
+.tempdiv h1{
+    font-size: 70px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.tempdiv h5{
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.minmax{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+    height: 100px;
+    /* justify-content: space-between; */
+    color: white;
+}
+.minmax h2{
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: 600; */
+}
+.minmax p{
+    font-size: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+.minmaxLeft{
+    height: 100%;
+    border: 0px solid black;
+    border-right: 2px solid rgba(131, 131, 131, 0.692);
+    padding: 0px 30px 0px 0px;
+}
+.minmaxRight{
+    margin-left: 30px;
+}
+.locationdiv{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 100px;
+    color: white;
+}
+.locationdiv i{
+    margin-top: 23px;
+    margin-right: 10px;
+}
+.locationName{
+    display: flex;
+    height: 48px;
+    border: 0px solid black;
+    border-radius: 1px;
+    border-bottom: 3px solid white;
+    margin-left: 1%;
+
+
+}
+.locationdiv h3{
+    /* height: 45px; */
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    /* text-decoration: underline 2px white ; */
+    
+    
+}
+.locationdiv h2{
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-left: 8%;
+}
+.middle{
+    height: 25px;
+    background-image: linear-gradient(rgba(8,2,42,255), rgba(34,34,116,255));
+
+}
+
+.lower{
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.otherDetails p{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-left: 5%;
+}
+.otherDetails img{
+    width: 40px;
+    margin-right: 2%;
+}
+.otherDetailldiv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Arvo&family=Ballet&family=Cherish&family=Cinzel&family=Diplomata&family=Exo:wght@500&family=Genos:wght@200&family=Goldman&family=Great+Vibes&family=Gruppo&family=Lora&family=Love+Light&family=Marcellus&family=Montserrat+Alternates:wght@300&family=Montserrat:wght@100&family=Mulish:wght@200&family=Nunito:wght@200&family=Orbitron&family=Playfair+Display&family=Puppies+Play&family=Raleway:wght@200;300&family=Roboto:ital@1&family=Secular+One&family=Shadows+Into+Light&family=Tenor+Sans&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <div class="row w-100 navrow">
+                <div class="col-6 w-25">
+
+                    <a class="navbar-brand" href="#">
+                      <img src="images/logo.jpeg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                      <p> Weather App</p>
+                    </a>
+                </div>
+                <div class="col-6 w-50 time">
+
+                    <p id="year"></p>
+                    <p id="date"></p>
+                    <p id="month"></p>
+                </div>
+            </div>
+        </div>
+      </nav>
+
+
+      <!-- search bar -->
+      <!-- <div class="row search">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <input type="text" id="placeName" class="searchbox" placeholder="Enter location">
+            <button id="searchButton " class="searchbtn" onclick="search()"><i class="fa fa-search"></i></button>
+            <button id="locationbtn" class="currentLocation" onclick="currentLocation()">Current Location</button>
+        </div>
+        <div class="col-4"></div>
+      </div> -->
+    <!-- main  -->
+    <div class="container">
+        <div class="row">
+            
+            <!-- main data area  -->
+            <div class="main col-4  w-100 m-5">
+
+                <!-- two parts of data  -->
+                <div class="row">
+
+
+                    <!-- upper part -->
+                    <div class="col-12 h-50  upperPart">
+
+                       <div class="row">
+
+                            <!-- upper left -->
+                            <div class="col-6">
+                                <div class="tempdiv">
+
+                                    <h1 id="temp">Temperature</h1>
+                                    <h5 id="type"></h5>
+                                    <div class="minmax">
+                                        <div class="minmaxLeft">
+
+                                            <h2 >Minimum tempareture</h2>
+                                            <p id="min-temp"></p>
+                                        </div>
+                                        <div class="minmaxRight">
+
+                                            <h2 >Maximum tempareture</h2>
+                                            <p id="max-temp"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- upper right -->
+                            <div class="col-6 locationdiv">
+                                <i class="fa-sharp fa-solid fa-location-dot fa-2xl" style="color: #dadfe7;"></i>
+                                <div class="locationName">
+                                    <h3 id="location">Location</h3>
+                                    <h2 id="country"></h2>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+
+                    <div class="middle col-12"></div>
+                    <!-- lower part -->
+                    <div class="col-12 lower">
+                        <div class="row">
+                            <!-- lower left -->
+                            <div class="col-6 otherDetails">
+                                <div class="otherDetailldiv"><p><img src="images/temperature-icon.webp" alt=""><p > Feels like  <p id="feels"></p></p></p></div>
+                                <div class="otherDetailldiv"><p><img src="images/wind-icon.jpg" alt=""> <p > Wind Speed <p id="wind"></p></p> </p></div>
+                                <div class="otherDetailldiv"><p><img src="images/humidity-vetor-icon-removebg-preview.png" alt=""><p > Humidity <p id="humidity"></p></p> </p></div>      
+                            </div>
+
+                            <!-- lower right -->
+                            <div class="col-6 p-3">
+                                <div class="row search">
+                                    
+                                    <div class="col-12 search p-5">
+                                        <input type="text" id="placeName" class="searchbox" placeholder="Enter location">
+                                        <button id="searchButton " class="searchbtn" onclick="search()"><i class="fa fa-search"></i></button>
+                                        <!-- <button id="locationbtn" class="currentLocation" onclick="currentLocation()">Current Location</button> -->
+                                    </div>
+                                    
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
