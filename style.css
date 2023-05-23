@@ -5,9 +5,9 @@
 } */
 body{
     /* background-image: linear-gradient(rgba(241,123,187,255), rgba(101,97,240,255)); */
-    background-image: url("images/2.webp");
+    background-image: url("images/rain\ bg.jpg");
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: cover;
 }
 .navbar{
@@ -29,7 +29,7 @@ body{
     color: white;
 }
 .navbar img{
-    margin-left: 18%;
+    margin-left: 12%;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -63,7 +63,7 @@ body{
     height: 30px;
     border: 0px;
     border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.79);
+    /* border: 1px solid rgba(0, 0, 0, 0.79); */
     padding: 20px;
 }
 .searchbtn{
@@ -72,8 +72,11 @@ body{
     border: 0px;
     border-radius: 50%;
     margin-left: 3%;
-    border: 2px solid rgba(0, 0, 0, 0.79);
+    /* border: 2px solid rgba(0, 0, 0, 0.79); */
 
+}
+.searchbtn:hover{
+    border: 2px solid black;
 }
 .currentLocation{
     height: 30px;
@@ -88,7 +91,7 @@ body{
 .upperPart{
     background-image: url("images/th.jpeg");
     background-repeat: no-repeat;
-    
+    margin-top: 50px;
     background-size: cover;
     background-image: linear-gradient(rgba(51,22,103,255),rgba(49,34,122,255), rgba(47,46,140,255));
     border-radius: 30px 30px 0px 0px;
@@ -161,7 +164,7 @@ body{
     height: 48px;
     border: 0px solid black;
     border-radius: 1px;
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
     margin-left: 1%;
 
 
